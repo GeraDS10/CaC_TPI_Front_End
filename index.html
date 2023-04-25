@@ -46,26 +46,32 @@
             <h3>ORADORES</h3>
         </div>
         <div class="speakers_container">
-            <div class="speaker_1">
+            <div class="speaker">
                 <img src="img/steve.jpg" alt="">
-                <button></button>
-                <button></button>
+                <div class="speaker_links">
+                    <button></button>
+                    <button></button>
+                </div>
                 <h3>Steve Jobs</h3>
-                <p>PARRAFO</p>
+                <p class="speaker_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem alias, eligendi repudiandae, architecto eveniet animi officiis ipsam enim odio nostrum? Neque repellat quibusdam itaque, unde ullam sequi dignissimos distinctio!</p>
             </div>
-            <div class="speaker_2">
+            <div class="speaker">
                 <img src="img/bill.jpg" alt="">
-                <button></button>
-                <button></button>
+                <div class="speaker_links">
+                    <button></button>
+                    <button></button>
+                </div>
                 <h3>Bill Gates</h3>
-                <p>PARRAFO</p>
+                <p class="speaker_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et asperiores laborum repudiandae quibusdam repellat. Rem, neque sit veniam praesentium amet illum, eum enim nisi nostrum fugiat, laborum in eveniet numquam?</p>
             </div>
-            <div class="speaker_3">
+            <div class="speaker">
                 <img src="img/ada.jpeg" alt="">
-                <button></button>
-                <button></button>
+                <div class="speaker_links">
+                    <button></button>
+                    <button></button>
+                </div>
                 <h3>Ada Lovelace</h3>
-                <p>PARRAFO</p>
+                <p class="speaker_review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate excepturi repudiandae incidunt, nulla omnis quos laudantium dicta quo voluptatum, recusandae distinctio quis nesciunt rerum nobis pariatur illum, tempore quidem?</p>
             </div>
         </div>
     </section>
@@ -73,20 +79,27 @@
         <img src="img/honolulu.jpg" alt="" id="review_image">
         <div class="review">
             <h3>Bs As - Octubre</h3>
-            <p>PARRAFO</p>
-            <button>Conoce Mas</button>
+            <p>
+                Buenos Aires es la provincia y localidad más grande del estado de Argentina. en los Estados Unidos. Honolulu es la
+                más sureña de entre las principales ciudades estadounidenses. Anque el nombre de Honolulu se refiere al área 
+                urbana de la costa sureste de la osla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-
+                condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).
+            </p>
+            <button id="review_container_know_more">Conocé Más</button>
         </div>
     </section>
     <section class="form_container">
         <form action="" class="form_speaker">
-            <p>CONVIERTETE EN UN</p>
+            <p class="form_container_pre_spekear">CONVIERTETE EN UN</p>
             <h3>ORADOR</h3>
-            <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
-            <input type="text" name="nombre" spaceholer="Nombre" id="">
-            <input type="text" name="apellido" spaceholer="Apellido" id="">
-            <input type="text" name="theme" id="theme">
-            <p>Recuerda incluir un titulo para tu charla</p>
-            <button type="submit">Enviar</button>
+            <p class="form_container_post_speaker">Anótate como orador para dar una <a href="" class="form_container_underline">charla ignite</a>. Cuéntanos de que quieres hablar!</p>
+            <div class="form_container_identification">
+                <input type="text" name="name" placeholder="Nombre" id="form_name">
+            <input type="text" name="lastname" placeholder="Apellido" id="form_lastname">
+            </div>
+            <input type="text" name="theme" placeholder="Sobre qué quieres hablar?" id="theme">
+            <p class="form_reminder">Recuerda incluir un titulo para tu charla</p>
+            <button type="submit" id="send_form-button">Enviar</button>
         </form>
     </section>
     <footer>
