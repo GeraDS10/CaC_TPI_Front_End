@@ -5,7 +5,7 @@ body{
  
  header{
     display: flex;
-    background-color: rgba(52, 51, 51, 1);
+    background-color: rgba(53,58,64, 1);
     justify-content: space-evenly;
     align-items: center;
     height: 10%;
@@ -17,9 +17,11 @@ body{
 
  .logo_container{
     display: flex;
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
     align-items: center;
+    padding-left: 10%;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
  }
 
  #cac_logo{
@@ -30,11 +32,11 @@ body{
 nav{
     opacity: 100%;
     color: rgba(255, 255, 255, 0.5);
-    
+    padding-right: 2%;
 }
 nav li{
     display: flex;
-    font-size: 100%;
+    font-size: 80%;
 }
 
 .selected{
@@ -46,7 +48,8 @@ nav li{
 }
 
 nav li ul{
-    
+    white-space: nowrap;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
 }
 
 .summary_container{
@@ -75,12 +78,11 @@ nav li ul{
 }
 
 .summary_title{
-    /* color: rgba(255, 255, 255, 1); */
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
     font-size: 200%;
 }
 
 .summary_text{
-    /* color: rgba(255, 255, 255, 0.8); */
     width: 50%;
 }
 
@@ -88,7 +90,6 @@ nav li ul{
     display: flex;
     justify-content: flex-end;
     width: 50%;
-    border: 0%;
     margin: 0%;
 }
 
@@ -97,13 +98,25 @@ nav li ul{
     border-color: rgba(255, 255, 255, 1);
     background-color: rgba(00, 00, 00, 0);
     border-radius: 0.25rem;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    border: solid 0.5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #buy_button{
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(75, 185, 40, 1);
-    border-radius: 0.25rem;
-    padding: 3%;
+    background-color: rgba(41,167,68, 1);
+    border-radius: 0.3rem;
+    border: 1px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    margin-left: 3%;
 }
 
 .speakers{
@@ -111,12 +124,18 @@ nav li ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2%;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
 }
 
 .speaker{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 25vw;
+    align-items: center;
+    border: solid 1px;
+    border-color: rgba(00, 00, 00, 0.15);
+    font-size: smaller;
 }
 
 .speakers_container{
@@ -125,23 +144,70 @@ nav li ul{
     justify-content: space-evenly;
 }
 
-.speakers_container img{
-    width: 30vh;
-    height: 30vh;
+.speaker_img{
+    width: 25vw;
+}
+
+.speaker_img img{
+    width: 100%;
+    height: 15em;
 }
 
 .speaker_links{
-    display: flex;
+    width: 100%;
 
+}
+
+.speaker_links button{
+    margin-left: 0.5vw;
 }
 
 .speaker_review{
     overflow: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
 }
 .review_container{
     display: flex;
-    background-color: rgba(00, 00, 00, 0.75);
+    background-color: rgba(53,58,64,1);
     color: white;
+    margin-bottom: 2%;
+    height: 60vh;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+.review_title{
+
+}
+
+.review_text{
+    font-size: smaller;
+}
+
+
+.button_link_javascript{
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(254,193,6, 1);
+}
+
+.button_link_react{
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(22,163,184,1);
+}
+
+.button_link_startups{
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(219,54,70,1);
+}
+
+.button_link_business{
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(108,117,124, 1);
 }
 
 .review{
@@ -155,7 +221,7 @@ nav li ul{
 #review_container_know_more{
     background-color: rgba(00, 00, 00, 0);
     color: rgba(255, 255, 255, 1);
-    width: 20%;
+    width: 15%;
     height: 10%;
    border-color: rgba(255, 255, 255, 1);
    border-radius: 0.25rem;
@@ -166,6 +232,7 @@ nav li ul{
     flex-direction: column;
     align-items: center;
     margin-bottom: 1%;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
 }
 
 .form_speaker{
@@ -176,7 +243,7 @@ nav li ul{
 
 .form_container_pre_spekear{
     margin: 1%;
-    font-size: small;
+    font-size: 0.7rem;
 }
 
 .form_container h3{
@@ -206,24 +273,32 @@ nav li ul{
     margin-right: 1%;
     border-radius: 0.25rem;
     border: 1px solid;
+    border-color: rgba(00, 00, 00, 0.30);
 }
 
 #form_lastname{
     width: 48%;
+    border-radius: 0.25rem;
+    border: 1px solid;
+    border-color: rgba(00, 00, 00, 0.30);
 }
 
 #theme{
     width: 100%;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
+    border-radius: 0.25rem;
+    border: 1px solid;
+    border-color: rgba(00, 00, 00, 0.30);
 }
 
 .form_reminder{
     align-self: baseline;
     color: rgba(00, 00, 00, 0.60);
+    font-size: x-small;
 }
 
 #send_form-button{
-    background-color: rgba(75, 185, 40, 1);
+    background-color: rgba(150,201,62, 1);
     color: rgba(255, 255, 255, 1);
     width: 100%;
     padding-top: 2%;
@@ -236,14 +311,13 @@ footer li{
     color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: center;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
 }
 
-footer li ul{margin: 0%;
-    padding: 2%;
-    /* padding-left: 0%;
-    padding-right: 0%; */
-}
-
-footer li ul:hover{
-    background-color: blue;
+footer li ul{
+    font-size: small;
+    margin: 0%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
 }
