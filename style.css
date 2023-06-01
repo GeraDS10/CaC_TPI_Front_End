@@ -326,3 +326,49 @@ footer li ul{
     padding-bottom: 3%;
     
 }
+/* 
+.tickets_list{
+    align-items: center;
+} */
+
+.tickets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tickets_list{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.tickets_list_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: red;
+    margin: 2%;
+    height: 80%;
+    width: 20%;
+}
+
+.tickets_price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_tickets_buy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_tickets_selection{
+    display: flex;
+}
