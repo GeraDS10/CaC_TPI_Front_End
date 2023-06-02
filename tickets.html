@@ -25,19 +25,19 @@
     </header>
    <section class="tickets">
     <div class="tickets_list">
-        <div class="tickets_list_card">
+        <div class="tickets_list_card ticket_list_card_estudiante">
             <h3>Estudiante</h3>
                 <p>Tiene un descuento</p>
                 <h3>80%</h3>
                 <p>*presentar documentacion</p>
         </div>
-        <div class="tickets_list_card">
+        <div class="tickets_list_card ticket_list_card_trainee">
             <h3>Trainee</h3>
             <p>Tiene un descuento</p>
             <h3>50%</h3>
             <p>*presentar documentacion</p>
         </div>
-        <div class="tickets_list_card">
+        <div class="tickets_list_card ticket_list_card_junior">
             <h3>Junior</h3>
             <p>Tiene un descuento</p>
             <h3>15%</h3>
@@ -51,20 +51,20 @@
     
         <form action="" class="form_tickets_buy">
             <div class="form_tickets_identification">
-                <input type="text" name="nombre" id="" placeholder="Nombre">
-                <input type="text" name="" id="" placeholder="Apellido">
+                <input type="text" name="nombre" class="form_name" id="" placeholder="Nombre">
+                <input type="text" name="" class="form_lastname" id="form_tickets_buy_contact_input" placeholder="Apellido">
             </div>
             <div class="form_tickets_contact">
-                <input type="email" name="" id="" placeholder="Correo">
+                <input type="email" name="" id="form_tickets_contact_input" placeholder="  Correo">
             </div>
             <div class="form_tickets_selection">
                 <div class="form_tickets_quantity">
                     <aside>Cantidad</aside>
-                    <input type="number" name="" id="" placeholder="cantidad">
+                    <input type="number" name="" id="form_tickets_quantity_input" placeholder="cantidad">
                 </div>
-                <div class="form_tickets_select_category">
+                <div class="form_tickets_category">
                     <aside>Categoria</aside>
-                    <select name="" id="">
+                    <select name="" id="form_tickets_category_select">
                         <option value="estudiante">Estudiante</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
@@ -72,11 +72,11 @@
                 </div>
             </div>
             
-            <div id="form_tickets_total">
-                <p>Total a Pagar: $</p>
+            <div class="form_tickets_total">
+                <p id="form_tickets_total_output">Total a Pagar: $</p>
             </div>
             <div class="form_tickets_buttons">
-                <button type="reset" id="form_tickets_reset">Reset</button>
+                <button type="reset" id="form_tickets_borrar">Borrar</button>
                 <button type="submit" id="form_tickets_submit">Resumen</button>
             </div>
         </form>
