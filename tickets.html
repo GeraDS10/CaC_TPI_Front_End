@@ -10,16 +10,15 @@
 <body>
     <header>
         <div class="logo_container">
-            <img src="img/codoacodo.png" alt="codoacodo logo" id="cac_logo">
         <span>Conf Bs As</span>
         </div>
         <nav>
             <li>
-                <ul><a href="/index.html">La Conferencia</a></ul>
+                <ul id="navLaConferencia"><a href="/index.html" >La Conferencia</a></ul>
                 <ul>Los Oradores</ul>
                 <ul>El lugar y la fecha</ul>
-                <ul>Conviertete en Orador</ul>
-                <ul class="highlight"><a href="/tickets.html">Comprar tickets</a></ul>
+                <ul ><a href="/tickets.html" id="navSerOrador">Conviertete en Orador</a></ul>
+                <ul class="highlight"  id="navBuyTickets">Comprar tickets</ul>
             </li>
         </nav>
     </header>
@@ -29,33 +28,32 @@
             <h3>Estudiante</h3>
                 <p>Tiene un descuento</p>
                 <h3>80%</h3>
-                <p>*presentar documentacion</p>
+                <p class="tickets_list_card_reminder">*presentar documentacion</p>
         </div>
         <div class="tickets_list_card ticket_list_card_trainee">
             <h3>Trainee</h3>
             <p>Tiene un descuento</p>
             <h3>50%</h3>
-            <p>*presentar documentacion</p>
+            <p class="tickets_list_card_reminder">*presentar documentacion</p>
         </div>
         <div class="tickets_list_card ticket_list_card_junior">
             <h3>Junior</h3>
             <p>Tiene un descuento</p>
             <h3>15%</h3>
-            <p>*presentar documentacion</p>
+            <p class="tickets_list_card_reminder">*presentar documentacion</p>
         </div>  
     </div>
     <div class="tickets_price">
         <aside>VENTA</aside>
     <h2>VALOR DE TICKET $200</h2>
     </div>
-    
-        <form action="" class="form_tickets_buy">
+        <form action="" id="form_tickets_buy">
             <div class="form_tickets_identification">
-                <input type="text" name="nombre" class="form_name" id="" placeholder="Nombre">
-                <input type="text" name="" class="form_lastname" id="form_tickets_buy_contact_input" placeholder="Apellido">
+                <input type="text" name="nombre" class="form_name" id="form_tickets_buy_nombre" placeholder="Nombre">
+                <input type="text" name="" class="form_lastname" id="form_tickets_buy_lastname" placeholder="Apellido">
             </div>
             <div class="form_tickets_contact">
-                <input type="email" name="" id="form_tickets_contact_input" placeholder="  Correo">
+                <input type="email" name="" id="form_tickets_contact_mail" placeholder="  Correo">
             </div>
             <div class="form_tickets_selection">
                 <div class="form_tickets_quantity">
@@ -71,7 +69,6 @@
                     </select>
                 </div>
             </div>
-            
             <div class="form_tickets_total">
                 <p id="form_tickets_total_output">Total a Pagar: $</p>
             </div>
@@ -92,6 +89,6 @@
             <ul>Estudiantes</ul>
         </li>
     </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
