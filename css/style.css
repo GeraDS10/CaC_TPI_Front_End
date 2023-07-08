@@ -505,4 +505,17 @@ footer li ul{
     font-size: larger;
 }
 
+.oradores_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.oradores_page h2{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2em;
+}
+
 
